@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="501.0" prefWidth="451.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dlg_javafx.schadensfallverwaltung.Schadensfallanlage_Controller">
+   <children>
+      <Button fx:id="bt_schadensfallanlegen" layoutX="306.0" layoutY="436.0" mnemonicParsing="false" onAction="#anlegen" prefHeight="36.0" prefWidth="113.0" text="anlegen" />
+      <TextField fx:id="txt_versNr" layoutX="131.0" layoutY="36.0" prefHeight="25.0" prefWidth="170.0" promptText="14stellig, alphanumerisch" />
+      <TextField fx:id="txt_vorname" layoutX="131.0" layoutY="62.0" prefHeight="25.0" prefWidth="170.0" />
+      <TextField fx:id="txt_nachname" layoutX="133.0" layoutY="89.0" prefHeight="25.0" prefWidth="170.0" />
+      <TextField fx:id="txt_straße" layoutX="132.0" layoutY="141.0" prefHeight="25.0" prefWidth="170.0" />
+      <Label layoutX="30.0" layoutY="36.0" prefHeight="25.0" prefWidth="170.0" text="Versichertennr.:" />
+      <Label layoutX="30.0" layoutY="63.0" prefHeight="25.0" prefWidth="170.0" text="Vorname:" />
+      <Label layoutX="29.0" layoutY="88.0" prefHeight="25.0" prefWidth="170.0" text="Nachname:" />
+      <Label layoutX="28.0" layoutY="115.0" prefHeight="25.0" prefWidth="170.0" text="Geburtsdatum:" />
+      <Label layoutX="27.0" layoutY="142.0" prefHeight="25.0" prefWidth="170.0" text="Straße:" />
+      <Label layoutX="27.0" layoutY="168.0" prefHeight="25.0" prefWidth="170.0" text="Hausnr:" />
+      <Label layoutX="27.0" layoutY="195.0" prefHeight="25.0" prefWidth="170.0" text="Postleitzahl:" />
+      <Label layoutX="26.0" layoutY="221.0" prefHeight="25.0" prefWidth="170.0" text="Ort:" />
+      <Label layoutX="27.0" layoutY="248.0" prefHeight="25.0" prefWidth="170.0" text="Tarif:" />
+      <TextField fx:id="txt_hsnr" layoutX="132.0" layoutY="168.0" prefHeight="25.0" prefWidth="170.0" />
+      <TextField fx:id="txt_plz" layoutX="132.0" layoutY="195.0" prefHeight="25.0" prefWidth="170.0" />
+      <TextField fx:id="txt_ort" layoutX="132.0" layoutY="221.0" prefHeight="25.0" prefWidth="170.0" />
+      <TextField fx:id="txt_tarif" layoutX="133.0" layoutY="247.0" prefHeight="25.0" prefWidth="170.0" />
+      <Label layoutX="27.0" layoutY="274.0" prefHeight="25.0" prefWidth="170.0" text="Schadensart:" />
+      <Label layoutX="27.0" layoutY="302.0" prefHeight="25.0" prefWidth="170.0" text="Beschreibung:" />
+      <Label layoutX="31.0" layoutY="424.0" prefHeight="25.0" prefWidth="90.0" text="Schadenshöhe:" />
+      <Label layoutX="33.0" layoutY="395.0" prefHeight="25.0" prefWidth="70.0" text="Zeitpunkt:" />
+      <TextField fx:id="txt_beschreibung" layoutX="25.0" layoutY="326.0" prefHeight="60.0" prefWidth="397.0" />
+      <ComboBox fx:id="cmb_schadensart" layoutX="132.0" layoutY="274.0" prefHeight="25.0" prefWidth="170.0" visibleRowCount="3" />
+      <DatePicker fx:id="zeitpunkt" layoutX="123.0" layoutY="392.0" />
+      <TextField fx:id="txt_schadenshöhe" layoutX="123.0" layoutY="425.0" />
+      <TextField fx:id="day" layoutX="131.0" layoutY="115.0" prefHeight="25.0" prefWidth="34.0" />
+      <TextField fx:id="month" layoutX="174.0" layoutY="115.0" prefHeight="25.0" prefWidth="34.0" />
+      <TextField fx:id="year" layoutX="219.0" layoutY="115.0" prefHeight="25.0" prefWidth="83.0" />
+      <Label layoutX="167.0" layoutY="123.0" text="." />
+      <Label layoutX="211.0" layoutY="124.0" text="." />
+   </children>
+</AnchorPane>
